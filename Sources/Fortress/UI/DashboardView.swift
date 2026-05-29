@@ -43,7 +43,7 @@ public struct DashboardView: View {
     @State private var isAuditing = false
     @State private var selectedWatchtowerSection: WatchtowerSection? = nil
     
-    private let vaultState = VaultState.shared
+    @Bindable private var vaultState = VaultState.shared
     
     public init() {}
     
@@ -627,6 +627,11 @@ public struct DashboardView: View {
     
     @ViewBuilder
     private func renderSettingsView() -> some View {
+        // Read properties to register SwiftUI observation dependencies in render settings scope
+        let _ = vaultState.biometricUnlockEnabled
+        let _ = vaultState.autoWipeAttemptsLimit
+        let _ = vaultState.biometricUnlockAvailable
+        
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
                 Text("Fortress Settings")
@@ -692,10 +697,7 @@ public struct DashboardView: View {
                         .tracking(1.0)
                     
                     VStack(alignment: .leading, spacing: 12) {
-                        Picker("Auto-Wipe Threshold", selection: Binding(
-                            get: { vaultState.autoWipeAttemptsLimit },
-                            set: { vaultState.autoWipeAttemptsLimit = $0 }
-                        )) {
+                        Picker("Auto-Wipe Threshold", selection: $vaultState.autoWipeAttemptsLimit) {
                             Text("Disabled").tag(0)
                             Text("3 failed attempts").tag(3)
                             Text("5 failed attempts").tag(5)
