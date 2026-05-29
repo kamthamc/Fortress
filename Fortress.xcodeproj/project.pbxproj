@@ -7,55 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A4A44BBAE4FD44C582722BDA /* FortressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F392027C53945D78D052E6B /* FortressApp.swift */; };
-		E693E0A7D9B24EE29EB8FDFD /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF951BF9BF4EC79F8676EF /* DashboardView.swift */; };
-		CF2E841A9CAE4D6C9FEE3B53 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2F1D3F95B4093B59EA8A7 /* SetupView.swift */; };
-		A75F2C954FD34AF69A415E1A /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ADC93D940EBA5F65BF9 /* ItemDetailView.swift */; };
-		3C0A2B6202B14CCBAC9503BF /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD19C7DEFF1451FACC2E243 /* SidebarView.swift */; };
-		9FAB0F9C19C14010A419379C /* ItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E776941B27C4DD9BBDF96AA /* ItemEditView.swift */; };
-		5C4D0386DE864E1D8BFC138F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34CC0ED95AB431C96701340 /* MainView.swift */; };
-		B69C74ECF903406EABD6C835 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AA32F53524D7992CEB72D /* ItemListView.swift */; };
-		5B6BFD9B255341D5912D0ED1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC704AB768A441C9ACAB924C /* CardView.swift */; };
-		D85A1C60862949B89A7A3DB6 /* MagicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F260272AC92466189B8D930 /* MagicButton.swift */; };
-		081136EB64F5495A9920EE59 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30E9D61B3D4131B5BD6900 /* SecureTextField.swift */; };
-		7F80854FA15C4CD581315A9A /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F4B163F924DCF91985432 /* KeychainHelper.swift */; };
-		74FE03B333604CED8532DA08 /* TOTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FAADA3C93A4AFD92AB5AEE /* TOTPGenerator.swift */; };
-		5EE33A5E011E4187B00F6991 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11817E32A1E4C1AB2A9E884 /* PasswordGenerator.swift */; };
-		7FCD410976044511B0121A35 /* CryptoEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E961CB15E8446799360853 /* CryptoEngine.swift */; };
-		5D351AF45D2B4636A870E2C1 /* VaultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871BA566AA66495196CFE3FF /* VaultState.swift */; };
-		DFD7861DB731406BAECDB391 /* SchemaV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B810930664D59A2349397 /* SchemaV1.swift */; };
-		6339B17B82E74CEE8D7DD533 /* VaultItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FED529CC02461A9D98101C /* VaultItemType.swift */; };
-		C6860F6286AC483FAC3DA5C7 /* AuditEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1225CAA809FE4F579E548FD0 /* AuditEngine.swift */; };
-		107ADB3F58D649078277C313 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA9A4F1795540CE94427C5F /* BackupManager.swift */; };
+		18F54D22AE33400FB73CD8B0 /* FortressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1475392956543789D0A5E3E /* FortressApp.swift */; };
+		078AF885E5C24D97BAA34453 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC7713B0C74F9193F8F3DE /* DashboardView.swift */; };
+		13D7D4981F074A448B11323B /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FBF429AB144099BDB9365C /* SetupView.swift */; };
+		1F8544F520D34865A02460EA /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054043E6207D4CBBA9522120 /* ItemDetailView.swift */; };
+		93B5744A93804C1FAD3A3192 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C18400B83442588C712CFA /* SidebarView.swift */; };
+		42592F207ABE4D4B9CB96D75 /* ItemEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B32B55361AE4F5C92077DA2 /* ItemEditView.swift */; };
+		FE368470680C4669BD8FDAAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070397092B1D49AFBAD553A8 /* MainView.swift */; };
+		F324B3BE7E5645DD9383C432 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E0875A983446292A15E73 /* ItemListView.swift */; };
+		42D176F496CB44AFAB39F959 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2449FEC0969476184C130C0 /* CardView.swift */; };
+		679D8262CFD443BEA138BA18 /* MagicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A9D7140E354BE5A58F0908 /* MagicButton.swift */; };
+		D2CC0CDC6CCE4ACEB512C86F /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8730686C14236A639388C /* SecureTextField.swift */; };
+		524884CDC5BE487FB9183BC6 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2244CBFDF8046B4BC6197B0 /* KeychainHelper.swift */; };
+		DAAE8A0266A547FEB3297863 /* TOTPGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F155E41B1204C94BD83730C /* TOTPGenerator.swift */; };
+		7FCFB91B4A344E76A3274A26 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739232B3DE5A43CCA1B9400D /* PasswordGenerator.swift */; };
+		9320B4ACC095417E88BB0551 /* CryptoEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EAC3FE90B4189BB12B9C6 /* CryptoEngine.swift */; };
+		779FB1B5343F41EA801D44A4 /* VaultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6701B888A01A4410B4AD5605 /* VaultState.swift */; };
+		BB94DD4287744C75A311CDBD /* SchemaV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617CDD0E82C44844B9B4AEB4 /* SchemaV1.swift */; };
+		28D728D845EB40A2AD46E7BA /* VaultItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC4504A41EC44BBA19417DC /* VaultItemType.swift */; };
+		1B3A9D3311724F8493FE25FC /* AuditEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A2597FEEB048DDA3D201D2 /* AuditEngine.swift */; };
+		D2F269084B7B476794A77E13 /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3F8D31F8C3404798FA8B64 /* BackupManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E873DFF80166403FA0C833AE /* Fortress.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.application"; includeInIndex = 0; path = "Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F392027C53945D78D052E6B /* FortressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "FortressApp.swift"; path = "Sources/Fortress/FortressApp.swift"; sourceTree = SOURCE_ROOT; };
-		DAB1480E1FE34BE89E077D51 /* Fortress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = "text.plist.entitlements"; name = "Fortress.entitlements"; path = "Sources/Fortress/Fortress.entitlements"; sourceTree = SOURCE_ROOT; };
-		7CDF951BF9BF4EC79F8676EF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "DashboardView.swift"; path = "Sources/Fortress/UI/DashboardView.swift"; sourceTree = SOURCE_ROOT; };
-		11B2F1D3F95B4093B59EA8A7 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SetupView.swift"; path = "Sources/Fortress/UI/SetupView.swift"; sourceTree = SOURCE_ROOT; };
-		CDE67ADC93D940EBA5F65BF9 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemDetailView.swift"; path = "Sources/Fortress/UI/ItemDetailView.swift"; sourceTree = SOURCE_ROOT; };
-		9DD19C7DEFF1451FACC2E243 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SidebarView.swift"; path = "Sources/Fortress/UI/SidebarView.swift"; sourceTree = SOURCE_ROOT; };
-		2E776941B27C4DD9BBDF96AA /* ItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemEditView.swift"; path = "Sources/Fortress/UI/ItemEditView.swift"; sourceTree = SOURCE_ROOT; };
-		D34CC0ED95AB431C96701340 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "MainView.swift"; path = "Sources/Fortress/UI/MainView.swift"; sourceTree = SOURCE_ROOT; };
-		3F9AA32F53524D7992CEB72D /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemListView.swift"; path = "Sources/Fortress/UI/ItemListView.swift"; sourceTree = SOURCE_ROOT; };
-		BC704AB768A441C9ACAB924C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "CardView.swift"; path = "Sources/Fortress/UI/Components/CardView.swift"; sourceTree = SOURCE_ROOT; };
-		7F260272AC92466189B8D930 /* MagicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "MagicButton.swift"; path = "Sources/Fortress/UI/Components/MagicButton.swift"; sourceTree = SOURCE_ROOT; };
-		2D30E9D61B3D4131B5BD6900 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SecureTextField.swift"; path = "Sources/Fortress/UI/Components/SecureTextField.swift"; sourceTree = SOURCE_ROOT; };
-		778F4B163F924DCF91985432 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "KeychainHelper.swift"; path = "Sources/Fortress/Crypto/KeychainHelper.swift"; sourceTree = SOURCE_ROOT; };
-		51FAADA3C93A4AFD92AB5AEE /* TOTPGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "TOTPGenerator.swift"; path = "Sources/Fortress/Crypto/TOTPGenerator.swift"; sourceTree = SOURCE_ROOT; };
-		D11817E32A1E4C1AB2A9E884 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "PasswordGenerator.swift"; path = "Sources/Fortress/Crypto/PasswordGenerator.swift"; sourceTree = SOURCE_ROOT; };
-		69E961CB15E8446799360853 /* CryptoEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "CryptoEngine.swift"; path = "Sources/Fortress/Crypto/CryptoEngine.swift"; sourceTree = SOURCE_ROOT; };
-		871BA566AA66495196CFE3FF /* VaultState.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "VaultState.swift"; path = "Sources/Fortress/Models/VaultState.swift"; sourceTree = SOURCE_ROOT; };
-		623B810930664D59A2349397 /* SchemaV1.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SchemaV1.swift"; path = "Sources/Fortress/Models/SchemaV1.swift"; sourceTree = SOURCE_ROOT; };
-		43FED529CC02461A9D98101C /* VaultItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "VaultItemType.swift"; path = "Sources/Fortress/Models/VaultItemType.swift"; sourceTree = SOURCE_ROOT; };
-		1225CAA809FE4F579E548FD0 /* AuditEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "AuditEngine.swift"; path = "Sources/Fortress/Audit/AuditEngine.swift"; sourceTree = SOURCE_ROOT; };
-		CFA9A4F1795540CE94427C5F /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "BackupManager.swift"; path = "Sources/Fortress/Backup/BackupManager.swift"; sourceTree = SOURCE_ROOT; };
+		83C994187A1A41EABF071204 /* Fortress.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.application"; includeInIndex = 0; path = "Fortress.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1475392956543789D0A5E3E /* FortressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "FortressApp.swift"; path = "Sources/Fortress/FortressApp.swift"; sourceTree = SOURCE_ROOT; };
+		E2F9DABD262C4CD0BE5F0B1F /* Fortress.entitlements */ = {isa = PBXFileReference; lastKnownFileType = "text.plist.entitlements"; name = "Fortress.entitlements"; path = "Sources/Fortress/Fortress.entitlements"; sourceTree = SOURCE_ROOT; };
+		5CFC7713B0C74F9193F8F3DE /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "DashboardView.swift"; path = "Sources/Fortress/UI/DashboardView.swift"; sourceTree = SOURCE_ROOT; };
+		44FBF429AB144099BDB9365C /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SetupView.swift"; path = "Sources/Fortress/UI/SetupView.swift"; sourceTree = SOURCE_ROOT; };
+		054043E6207D4CBBA9522120 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemDetailView.swift"; path = "Sources/Fortress/UI/ItemDetailView.swift"; sourceTree = SOURCE_ROOT; };
+		A4C18400B83442588C712CFA /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SidebarView.swift"; path = "Sources/Fortress/UI/SidebarView.swift"; sourceTree = SOURCE_ROOT; };
+		3B32B55361AE4F5C92077DA2 /* ItemEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemEditView.swift"; path = "Sources/Fortress/UI/ItemEditView.swift"; sourceTree = SOURCE_ROOT; };
+		070397092B1D49AFBAD553A8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "MainView.swift"; path = "Sources/Fortress/UI/MainView.swift"; sourceTree = SOURCE_ROOT; };
+		323E0875A983446292A15E73 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "ItemListView.swift"; path = "Sources/Fortress/UI/ItemListView.swift"; sourceTree = SOURCE_ROOT; };
+		A2449FEC0969476184C130C0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "CardView.swift"; path = "Sources/Fortress/UI/Components/CardView.swift"; sourceTree = SOURCE_ROOT; };
+		C8A9D7140E354BE5A58F0908 /* MagicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "MagicButton.swift"; path = "Sources/Fortress/UI/Components/MagicButton.swift"; sourceTree = SOURCE_ROOT; };
+		2AB8730686C14236A639388C /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SecureTextField.swift"; path = "Sources/Fortress/UI/Components/SecureTextField.swift"; sourceTree = SOURCE_ROOT; };
+		E2244CBFDF8046B4BC6197B0 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "KeychainHelper.swift"; path = "Sources/Fortress/Crypto/KeychainHelper.swift"; sourceTree = SOURCE_ROOT; };
+		5F155E41B1204C94BD83730C /* TOTPGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "TOTPGenerator.swift"; path = "Sources/Fortress/Crypto/TOTPGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		739232B3DE5A43CCA1B9400D /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "PasswordGenerator.swift"; path = "Sources/Fortress/Crypto/PasswordGenerator.swift"; sourceTree = SOURCE_ROOT; };
+		AD9EAC3FE90B4189BB12B9C6 /* CryptoEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "CryptoEngine.swift"; path = "Sources/Fortress/Crypto/CryptoEngine.swift"; sourceTree = SOURCE_ROOT; };
+		6701B888A01A4410B4AD5605 /* VaultState.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "VaultState.swift"; path = "Sources/Fortress/Models/VaultState.swift"; sourceTree = SOURCE_ROOT; };
+		617CDD0E82C44844B9B4AEB4 /* SchemaV1.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "SchemaV1.swift"; path = "Sources/Fortress/Models/SchemaV1.swift"; sourceTree = SOURCE_ROOT; };
+		7FC4504A41EC44BBA19417DC /* VaultItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "VaultItemType.swift"; path = "Sources/Fortress/Models/VaultItemType.swift"; sourceTree = SOURCE_ROOT; };
+		53A2597FEEB048DDA3D201D2 /* AuditEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "AuditEngine.swift"; path = "Sources/Fortress/Audit/AuditEngine.swift"; sourceTree = SOURCE_ROOT; };
+		DB3F8D31F8C3404798FA8B64 /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = "source.swift"; name = "BackupManager.swift"; path = "Sources/Fortress/Backup/BackupManager.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B67F808BC0B442E5BF154478 /* Frameworks */ = {
+		B4D5754B6DE54F2A8E7996F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,103 +65,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A7FD0CDAB0204069A3F6BCB3 = {
+		23BC01AFD68D4D22BA73CF42 = {
 			isa = PBXGroup;
 			children = (
-				EFC40ADF0AB34EA5971377CC /* Sources */,
-				F96019AA7B2D43888B75CCA1 /* Products */,
+				1A0F5BC0DD484CBBA123B68F /* Sources */,
+				0B738F5CF1FF4291B2C8C06F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F96019AA7B2D43888B75CCA1 /* Products */ = {
+		0B738F5CF1FF4291B2C8C06F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E873DFF80166403FA0C833AE /* Fortress.app */,
+				83C994187A1A41EABF071204 /* Fortress.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EFC40ADF0AB34EA5971377CC /* Sources */ = {
+		1A0F5BC0DD484CBBA123B68F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				1C9BB329C4FA4F649930E0A1 /* Fortress */,
+				2BF2176009A64014A3C5B08C /* Fortress */,
 			);
 			name = "Sources";
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		1C9BB329C4FA4F649930E0A1 /* Fortress */ = {
+		2BF2176009A64014A3C5B08C /* Fortress */ = {
 			isa = PBXGroup;
 			children = (
-				95476B28DBAA4DAB89623C9D /* UI */,
-				4C358021050045DCA9072CC1 /* Crypto */,
-				18A806DB4E3F45F4B245ED49 /* Models */,
-				A52BBFCE2D2F4D708F704C16 /* Audit */,
-				99AD55800EBA479AAED857EA /* Backup */,
-				7F392027C53945D78D052E6B /* FortressApp.swift */,
-				DAB1480E1FE34BE89E077D51 /* Fortress.entitlements */,
+				C71AFEC481D04B2297425139 /* UI */,
+				17BCC65EF7C04341846B6B45 /* Crypto */,
+				A70F2B3A03D2453EAB509D1E /* Models */,
+				8D37EF8D1C9A4ADEAFA027FE /* Audit */,
+				DA2D8FB27BC9446B93FCB14B /* Backup */,
+				B1475392956543789D0A5E3E /* FortressApp.swift */,
+				E2F9DABD262C4CD0BE5F0B1F /* Fortress.entitlements */,
 			);
 			name = "Fortress";
 			sourceTree = "<group>";
 		};
-		95476B28DBAA4DAB89623C9D /* UI */ = {
+		C71AFEC481D04B2297425139 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				9DA481B851044D749D602744 /* Components */,
-				7CDF951BF9BF4EC79F8676EF /* DashboardView.swift */,
-				11B2F1D3F95B4093B59EA8A7 /* SetupView.swift */,
-				CDE67ADC93D940EBA5F65BF9 /* ItemDetailView.swift */,
-				9DD19C7DEFF1451FACC2E243 /* SidebarView.swift */,
-				2E776941B27C4DD9BBDF96AA /* ItemEditView.swift */,
-				D34CC0ED95AB431C96701340 /* MainView.swift */,
-				3F9AA32F53524D7992CEB72D /* ItemListView.swift */,
+				7F7A5E5ED2A947A0AC1C9F7B /* Components */,
+				5CFC7713B0C74F9193F8F3DE /* DashboardView.swift */,
+				44FBF429AB144099BDB9365C /* SetupView.swift */,
+				054043E6207D4CBBA9522120 /* ItemDetailView.swift */,
+				A4C18400B83442588C712CFA /* SidebarView.swift */,
+				3B32B55361AE4F5C92077DA2 /* ItemEditView.swift */,
+				070397092B1D49AFBAD553A8 /* MainView.swift */,
+				323E0875A983446292A15E73 /* ItemListView.swift */,
 			);
 			name = "UI";
 			sourceTree = "<group>";
 		};
-		A52BBFCE2D2F4D708F704C16 /* Audit */ = {
+		8D37EF8D1C9A4ADEAFA027FE /* Audit */ = {
 			isa = PBXGroup;
 			children = (
-				1225CAA809FE4F579E548FD0 /* AuditEngine.swift */,
+				53A2597FEEB048DDA3D201D2 /* AuditEngine.swift */,
 			);
 			name = "Audit";
 			sourceTree = "<group>";
 		};
-		4C358021050045DCA9072CC1 /* Crypto */ = {
+		17BCC65EF7C04341846B6B45 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				778F4B163F924DCF91985432 /* KeychainHelper.swift */,
-				51FAADA3C93A4AFD92AB5AEE /* TOTPGenerator.swift */,
-				D11817E32A1E4C1AB2A9E884 /* PasswordGenerator.swift */,
-				69E961CB15E8446799360853 /* CryptoEngine.swift */,
+				E2244CBFDF8046B4BC6197B0 /* KeychainHelper.swift */,
+				5F155E41B1204C94BD83730C /* TOTPGenerator.swift */,
+				739232B3DE5A43CCA1B9400D /* PasswordGenerator.swift */,
+				AD9EAC3FE90B4189BB12B9C6 /* CryptoEngine.swift */,
 			);
 			name = "Crypto";
 			sourceTree = "<group>";
 		};
-		18A806DB4E3F45F4B245ED49 /* Models */ = {
+		A70F2B3A03D2453EAB509D1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				871BA566AA66495196CFE3FF /* VaultState.swift */,
-				623B810930664D59A2349397 /* SchemaV1.swift */,
-				43FED529CC02461A9D98101C /* VaultItemType.swift */,
+				6701B888A01A4410B4AD5605 /* VaultState.swift */,
+				617CDD0E82C44844B9B4AEB4 /* SchemaV1.swift */,
+				7FC4504A41EC44BBA19417DC /* VaultItemType.swift */,
 			);
 			name = "Models";
 			sourceTree = "<group>";
 		};
-		99AD55800EBA479AAED857EA /* Backup */ = {
+		DA2D8FB27BC9446B93FCB14B /* Backup */ = {
 			isa = PBXGroup;
 			children = (
-				CFA9A4F1795540CE94427C5F /* BackupManager.swift */,
+				DB3F8D31F8C3404798FA8B64 /* BackupManager.swift */,
 			);
 			name = "Backup";
 			sourceTree = "<group>";
 		};
-		9DA481B851044D749D602744 /* Components */ = {
+		7F7A5E5ED2A947A0AC1C9F7B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				BC704AB768A441C9ACAB924C /* CardView.swift */,
-				7F260272AC92466189B8D930 /* MagicButton.swift */,
-				2D30E9D61B3D4131B5BD6900 /* SecureTextField.swift */,
+				A2449FEC0969476184C130C0 /* CardView.swift */,
+				C8A9D7140E354BE5A58F0908 /* MagicButton.swift */,
+				2AB8730686C14236A639388C /* SecureTextField.swift */,
 			);
 			name = "Components";
 			sourceTree = "<group>";
@@ -169,13 +169,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1847D51AD304236AC0F5920 /* Fortress */ = {
+		A0F939D716E440F7B019946D /* Fortress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AB63AB42E884227AE3BBFC5 /* Build configuration list for PBXNativeTarget "Fortress" */;
+			buildConfigurationList = 4A81F70E013B4BED8A61E79B /* Build configuration list for PBXNativeTarget "Fortress" */;
 			buildPhases = (
-				897A3A8EE18047D196762ADC /* Sources */,
-				B67F808BC0B442E5BF154478 /* Frameworks */,
-				D4AB078A49A14EA4873EFE78 /* Resources */,
+				2740A39D2EFB4BEE9472985E /* Sources */,
+				B4D5754B6DE54F2A8E7996F3 /* Frameworks */,
+				7E819D5D5C8B4036BBB31D8E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -183,26 +183,26 @@
 			);
 			name = Fortress;
 			productName = Fortress;
-			productReference = E873DFF80166403FA0C833AE /* Fortress.app */;
+			productReference = 83C994187A1A41EABF071204 /* Fortress.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C025C97B7F3487F9EE903BB /* Project object */ = {
+		2A1C1B408CB642C59090E467 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					C1847D51AD304236AC0F5920 = {
+					A0F939D716E440F7B019946D = {
 						CreatedOnToolsVersion = "15.0";
 						DevelopmentTeam = "";
 					};
 				};
 			};
-			buildConfigurationList = E73C58C94F7A4B5D9E40B3C4 /* Build configuration list for PBXProject "Fortress" */;
+			buildConfigurationList = 66AEEADB6E834E278D156D15 /* Build configuration list for PBXProject "Fortress" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -210,18 +210,18 @@
 				en,
 				Base,
 			);
-			mainGroup = A7FD0CDAB0204069A3F6BCB3;
-			productRefGroup = F96019AA7B2D43888B75CCA1 /* Products */;
+			mainGroup = 23BC01AFD68D4D22BA73CF42;
+			productRefGroup = 0B738F5CF1FF4291B2C8C06F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1847D51AD304236AC0F5920 /* Fortress */,
+				A0F939D716E440F7B019946D /* Fortress */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4AB078A49A14EA4873EFE78 /* Resources */ = {
+		7E819D5D5C8B4036BBB31D8E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -231,37 +231,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		897A3A8EE18047D196762ADC /* Sources */ = {
+		2740A39D2EFB4BEE9472985E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A44BBAE4FD44C582722BDA /* FortressApp.swift in Sources */,
-				E693E0A7D9B24EE29EB8FDFD /* DashboardView.swift in Sources */,
-				CF2E841A9CAE4D6C9FEE3B53 /* SetupView.swift in Sources */,
-				A75F2C954FD34AF69A415E1A /* ItemDetailView.swift in Sources */,
-				3C0A2B6202B14CCBAC9503BF /* SidebarView.swift in Sources */,
-				9FAB0F9C19C14010A419379C /* ItemEditView.swift in Sources */,
-				5C4D0386DE864E1D8BFC138F /* MainView.swift in Sources */,
-				B69C74ECF903406EABD6C835 /* ItemListView.swift in Sources */,
-				5B6BFD9B255341D5912D0ED1 /* CardView.swift in Sources */,
-				D85A1C60862949B89A7A3DB6 /* MagicButton.swift in Sources */,
-				081136EB64F5495A9920EE59 /* SecureTextField.swift in Sources */,
-				7F80854FA15C4CD581315A9A /* KeychainHelper.swift in Sources */,
-				74FE03B333604CED8532DA08 /* TOTPGenerator.swift in Sources */,
-				5EE33A5E011E4187B00F6991 /* PasswordGenerator.swift in Sources */,
-				7FCD410976044511B0121A35 /* CryptoEngine.swift in Sources */,
-				5D351AF45D2B4636A870E2C1 /* VaultState.swift in Sources */,
-				DFD7861DB731406BAECDB391 /* SchemaV1.swift in Sources */,
-				6339B17B82E74CEE8D7DD533 /* VaultItemType.swift in Sources */,
-				C6860F6286AC483FAC3DA5C7 /* AuditEngine.swift in Sources */,
-				107ADB3F58D649078277C313 /* BackupManager.swift in Sources */,
+				18F54D22AE33400FB73CD8B0 /* FortressApp.swift in Sources */,
+				078AF885E5C24D97BAA34453 /* DashboardView.swift in Sources */,
+				13D7D4981F074A448B11323B /* SetupView.swift in Sources */,
+				1F8544F520D34865A02460EA /* ItemDetailView.swift in Sources */,
+				93B5744A93804C1FAD3A3192 /* SidebarView.swift in Sources */,
+				42592F207ABE4D4B9CB96D75 /* ItemEditView.swift in Sources */,
+				FE368470680C4669BD8FDAAE /* MainView.swift in Sources */,
+				F324B3BE7E5645DD9383C432 /* ItemListView.swift in Sources */,
+				42D176F496CB44AFAB39F959 /* CardView.swift in Sources */,
+				679D8262CFD443BEA138BA18 /* MagicButton.swift in Sources */,
+				D2CC0CDC6CCE4ACEB512C86F /* SecureTextField.swift in Sources */,
+				524884CDC5BE487FB9183BC6 /* KeychainHelper.swift in Sources */,
+				DAAE8A0266A547FEB3297863 /* TOTPGenerator.swift in Sources */,
+				7FCFB91B4A344E76A3274A26 /* PasswordGenerator.swift in Sources */,
+				9320B4ACC095417E88BB0551 /* CryptoEngine.swift in Sources */,
+				779FB1B5343F41EA801D44A4 /* VaultState.swift in Sources */,
+				BB94DD4287744C75A311CDBD /* SchemaV1.swift in Sources */,
+				28D728D845EB40A2AD46E7BA /* VaultItemType.swift in Sources */,
+				1B3A9D3311724F8493FE25FC /* AuditEngine.swift in Sources */,
+				D2F269084B7B476794A77E13 /* BackupManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B2744DD7541445F69F7BF72E /* Debug */ = {
+		835965B42040456383BEE784 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,14 +293,14 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				IPHONEOS_DEPLOYMENT_TARGET = "26.0";
-				MACOSX_DEPLOYMENT_TARGET = "26.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				MACOSX_DEPLOYMENT_TARGET = "14.0";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		9713EF1EC0BA4CA18BEAF787 /* Release */ = {
+		2D816FD458344B91887D2A6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -325,14 +325,14 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				IPHONEOS_DEPLOYMENT_TARGET = "26.0";
-				MACOSX_DEPLOYMENT_TARGET = "26.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				MACOSX_DEPLOYMENT_TARGET = "14.0";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		1FF869AC33ED452A902D8F44 /* Debug */ = {
+		A5AD8F7B90304A6EAF2C1B36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -352,13 +352,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx appletvos appletvsimulator watchos watchsimulator xros xrsimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				IPHONEOS_DEPLOYMENT_TARGET = "26.0";
-				MACOSX_DEPLOYMENT_TARGET = "26.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				MACOSX_DEPLOYMENT_TARGET = "14.0";
 				SWIFT_VERSION = "5.9";
 			};
 			name = Debug;
 		};
-		D72F466171104235A13C29B5 /* Release */ = {
+		8ED0BB6B8C08465C93C143EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -378,8 +378,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx appletvos appletvsimulator watchos watchsimulator xros xrsimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				IPHONEOS_DEPLOYMENT_TARGET = "26.0";
-				MACOSX_DEPLOYMENT_TARGET = "26.0";
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				MACOSX_DEPLOYMENT_TARGET = "14.0";
 				SWIFT_VERSION = "5.9";
 			};
 			name = Release;
@@ -387,25 +387,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E73C58C94F7A4B5D9E40B3C4 /* Build configuration list for PBXProject "Fortress" */ = {
+		66AEEADB6E834E278D156D15 /* Build configuration list for PBXProject "Fortress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B2744DD7541445F69F7BF72E /* Debug */,
-				9713EF1EC0BA4CA18BEAF787 /* Release */,
+				835965B42040456383BEE784 /* Debug */,
+				2D816FD458344B91887D2A6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AB63AB42E884227AE3BBFC5 /* Build configuration list for PBXNativeTarget "Fortress" */ = {
+		4A81F70E013B4BED8A61E79B /* Build configuration list for PBXNativeTarget "Fortress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FF869AC33ED452A902D8F44 /* Debug */,
-				D72F466171104235A13C29B5 /* Release */,
+				A5AD8F7B90304A6EAF2C1B36 /* Debug */,
+				8ED0BB6B8C08465C93C143EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C025C97B7F3487F9EE903BB /* Project object */;
+	rootObject = 2A1C1B408CB642C59090E467 /* Project object */;
 }

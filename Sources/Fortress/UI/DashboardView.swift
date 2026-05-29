@@ -31,6 +31,12 @@ public struct DashboardView: View {
     @State private var showImportPicker = false
     @State private var isProcessingSettings = false
     
+    // Sheet local error messages (displayed inside the modal sheets)
+    @State private var changePasswordError = ""
+    @State private var backupError = ""
+    @State private var restoreError = ""
+    @State private var biometricsError = ""
+    
     // Audit results
     @State private var auditPwnedItems: [UUID: Int] = [:] // item ID -> leak count
     @State private var auditProgress = 0.0
@@ -838,36 +844,46 @@ public struct DashboardView: View {
                 SecureField("New Master Password (min 8 chars)", text: $newPassword)
                     .textFieldStyle(.roundedBorder)
                 
+                if !changePasswordError.isEmpty {
+                    Text(changePasswordError)
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                
                 HStack {
                     Button("Cancel") {
                         showChangePasswordSheet = false
                         oldPassword = ""
                         newPassword = ""
+                        changePasswordError = ""
                     }
                     .keyboardShortcut(.cancelAction)
                     Spacer()
                     Button {
                         let old = oldPassword
                         let new = newPassword
-                        oldPassword = ""
-                        newPassword = ""
                         
                         let (strength, _) = AuditEngine.evaluateStrength(new)
                         guard strength == .strong else {
-                            settingsErrorMsg = "New Master Password must meet 'Strong' criteria."
+                            changePasswordError = "New Master Password must meet 'Strong' criteria."
                             return
                         }
                         
+                        oldPassword = ""
+                        newPassword = ""
                         isProcessingSettings = true
+                        changePasswordError = ""
                         
                         Task {
                             let success = await vaultState.changeMasterPassword(oldPassword: old, newPassword: new)
                             isProcessingSettings = false
                             if success {
                                 settingsSuccessMsg = "Master Password updated successfully."
+                                settingsErrorMsg = ""
                                 showChangePasswordSheet = false
                             } else {
-                                settingsErrorMsg = vaultState.lastError ?? "Failed to change password."
+                                changePasswordError = vaultState.lastError ?? "Failed to change password."
                             }
                         }
                     } label: {
@@ -898,10 +914,18 @@ public struct DashboardView: View {
                 SecureField("Backup Password", text: $backupPassword)
                     .textFieldStyle(.roundedBorder)
                 
+                if !backupError.isEmpty {
+                    Text(backupError)
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                
                 HStack {
                     Button("Cancel") {
                         showBackupSheet = false
                         backupPassword = ""
+                        backupError = ""
                     }
                     .keyboardShortcut(.cancelAction)
                     Spacer()
@@ -909,6 +933,7 @@ public struct DashboardView: View {
                         let passwordInput = backupPassword
                         backupPassword = ""
                         isProcessingSettings = true
+                        backupError = ""
                         // Map items to sendable ExportedItems on the MainActor
                         let exportedItems = allItems.map { VaultBackup.ExportedItem(from: $0) }
                         
@@ -921,9 +946,10 @@ public struct DashboardView: View {
                                 try data.write(to: backupURL)
                                 
                                 settingsSuccessMsg = "Backup saved successfully to: \(backupURL.path)"
+                                settingsErrorMsg = ""
                                 showBackupSheet = false
                             } catch {
-                                settingsErrorMsg = "Export failed: \(error.localizedDescription)"
+                                backupError = "Export failed: \(error.localizedDescription)"
                             }
                             isProcessingSettings = false
                         }
@@ -955,10 +981,18 @@ public struct DashboardView: View {
                 SecureField("Backup Password", text: $backupPassword)
                     .textFieldStyle(.roundedBorder)
                 
+                if !restoreError.isEmpty {
+                    Text(restoreError)
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                
                 HStack {
                     Button("Cancel") {
                         showRestoreSheet = false
                         backupPassword = ""
+                        restoreError = ""
                     }
                     .keyboardShortcut(.cancelAction)
                     Spacer()
@@ -966,6 +1000,7 @@ public struct DashboardView: View {
                         let passwordInput = backupPassword
                         backupPassword = ""
                         isProcessingSettings = true
+                        restoreError = ""
                         let backupURL = defaultBackupURL
                         Task {
                             do {
@@ -981,9 +1016,10 @@ public struct DashboardView: View {
                                 try modelContext.save()
                                 
                                 settingsSuccessMsg = "Restored \(importedExportedItems.count) items into the vault."
+                                settingsErrorMsg = ""
                                 showRestoreSheet = false
                             } catch {
-                                settingsErrorMsg = "Restore failed: \(error.localizedDescription)"
+                                restoreError = "Restore failed: \(error.localizedDescription)"
                             }
                             isProcessingSettings = false
                         }
@@ -1049,10 +1085,18 @@ public struct DashboardView: View {
                         attemptEnableBiometrics()
                     }
                 
+                if !biometricsError.isEmpty {
+                    Text(biometricsError)
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                
                 HStack {
                     Button("Cancel") {
                         showEnableBiometricsSheet = false
                         biometricsPassword = ""
+                        biometricsError = ""
                     }
                     .keyboardShortcut(.cancelAction)
                     Spacer()
@@ -1115,6 +1159,7 @@ public struct DashboardView: View {
         let passwordInput = biometricsPassword
         biometricsPassword = ""
         isProcessingSettings = true
+        biometricsError = ""
         
         Task {
             let success = await vaultState.enableBiometric(password: passwordInput)
@@ -1122,11 +1167,10 @@ public struct DashboardView: View {
             if success {
                 settingsSuccessMsg = "Biometric unlock enabled successfully."
                 settingsErrorMsg = ""
+                showEnableBiometricsSheet = false
             } else {
-                settingsErrorMsg = "Invalid Master Password. Could not enable biometrics."
-                settingsSuccessMsg = ""
+                biometricsError = "Invalid Master Password."
             }
-            showEnableBiometricsSheet = false
         }
     }
 }

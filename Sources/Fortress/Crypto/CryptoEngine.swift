@@ -12,10 +12,10 @@ public enum CryptoError: Error, LocalizedError {
         switch self {
         case .keyDerivationFailed:
             return "Failed to derive key from master password."
-        case .encryptionFailed(let msg):
-            return "Encryption error: \(msg)"
-        case .decryptionFailed(let msg):
-            return "Decryption error: \(msg). Please check your master password."
+        case .encryptionFailed:
+            return "Encryption failed."
+        case .decryptionFailed:
+            return "Incorrect Master Password. Please check your password and try again."
         case .invalidData:
             return "The data format is invalid."
         }

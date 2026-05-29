@@ -4,9 +4,9 @@ import PackageDescription
 let package = Package(
     name: "Fortress",
     platforms: [
-        .iOS("26.0"),
-        .macOS("26.0"),
-        .macCatalyst("26.0")
+        .iOS("17.0"),
+        .macOS("14.0"),
+        .macCatalyst("17.0")
     ],
     products: [
         // We define a library target first, which can be imported into the Xcode app target.
