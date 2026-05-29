@@ -15,14 +15,16 @@ public final class VaultState {
     public var lastError: String? = nil
     
     // Auto-wipe attempts configuration (0 means disabled)
-    public var autoWipeAttemptsLimit: Int {
-        get { UserDefaults.standard.integer(forKey: "autoWipeAttemptsLimit") }
-        set { UserDefaults.standard.set(newValue, forKey: "autoWipeAttemptsLimit") }
+    public var autoWipeAttemptsLimit: Int = UserDefaults.standard.integer(forKey: "autoWipeAttemptsLimit") {
+        didSet {
+            UserDefaults.standard.set(autoWipeAttemptsLimit, forKey: "autoWipeAttemptsLimit")
+        }
     }
     
-    public var failedUnlockAttempts: Int {
-        get { UserDefaults.standard.integer(forKey: "failedUnlockAttempts") }
-        set { UserDefaults.standard.set(newValue, forKey: "failedUnlockAttempts") }
+    public var failedUnlockAttempts: Int = UserDefaults.standard.integer(forKey: "failedUnlockAttempts") {
+        didSet {
+            UserDefaults.standard.set(failedUnlockAttempts, forKey: "failedUnlockAttempts")
+        }
     }
     
     // In-memory cache of decrypted item payloads to avoid decrypting on every UI layout pass (improves performance significantly!)

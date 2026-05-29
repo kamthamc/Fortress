@@ -388,13 +388,17 @@ public struct DashboardView: View {
                         .foregroundColor(.primary)
                     
                     // Gauge & Summary Block
-                    HStack(alignment: .top, spacing: 24) {
-                        WatchtowerGaugeView(
-                            score: scoreValue,
-                            percentage: Double(scorePercent) / 100.0,
-                            label: scoreLabel,
-                            color: scoreColor
-                        )
+                    VStack(alignment: .leading, spacing: 20) {
+                        HStack {
+                            Spacer()
+                            WatchtowerGaugeView(
+                                score: scoreValue,
+                                percentage: Double(scorePercent) / 100.0,
+                                label: scoreLabel,
+                                color: scoreColor
+                            )
+                            Spacer()
+                        }
                         
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Overall Security Score")
@@ -402,7 +406,6 @@ public struct DashboardView: View {
                             Text("Get alerts for any security issues that affect you. Your score gives an overall idea of how safe your credentials are. Review cards below to improve.")
                                 .font(.system(size: 11))
                                 .foregroundColor(.secondary)
-                                .lineLimit(4)
                                 .fixedSize(horizontal: false, vertical: true)
                             
                             // HIBP check action
@@ -414,7 +417,8 @@ public struct DashboardView: View {
                                 HStack {
                                     Image(systemName: isAuditing ? "arrow.triangle.2.circlepath" : "globe")
                                         .rotationEffect(.degrees(isAuditing ? 360 : 0))
-                                    Text(isAuditing ? "Auditing Vault... \(Int(auditProgress * 100))%" : "Scan for compromised passwords (HIBP API)")
+                                    Text(isAuditing ? "Auditing Vault... \(Int(auditProgress * 100))%" : "Scan compromised passwords (HIBP)")
+                                        .lineLimit(1)
                                 }
                                 .font(.system(size: 11, weight: .semibold))
                                 .foregroundColor(.white)
