@@ -1,0 +1,29 @@
+# Xcode
+#
+build/
+DerivedData/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.xcworkspace
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+*.xcuserstate
+*.xcuserdatad
+
+# Swift Package Manager
+#
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# macOS
+#
+.DS_Store
+*.swp
+*.swo
+
+# Local backups (temporary)
+#
+FortressBackup.db
+*.db
