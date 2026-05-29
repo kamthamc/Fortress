@@ -79,7 +79,9 @@ public struct KeychainHelper {
         ]
         
         if let prompt = prompt {
-            query[kSecUseOperationPrompt as String] = prompt
+            let context = LAContext()
+            context.localizedReason = prompt
+            query[kSecUseAuthenticationContext as String] = context
         }
         
         var dataTypeRef: AnyObject?
@@ -156,11 +158,13 @@ public struct KeychainHelper {
     
     /// Checks if biometric key exists in keychain.
     public func isBiometricUnlockEnabled() -> Bool {
+        let context = LAContext()
+        context.interactionNotAllowed = true
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,
             kSecAttrAccount as String: biometricKeyAccount,
-            kSecUseAuthenticationUI as String: kSecUseAuthenticationUIFail,
+            kSecUseAuthenticationContext as String: context,
             kSecReturnData as String: kCFBooleanFalse!
         ]
         let status = SecItemCopyMatching(query as CFDictionary, nil)
